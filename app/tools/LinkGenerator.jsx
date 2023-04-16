@@ -1,4 +1,10 @@
+import { View, Text } from "react-native";
+
 function LinkGenerator() {
-  return <div>LinkGenerator</div>;
+  return (
+    <View>
+      <Text>Link gen</Text>
+    </View>
+  );
 }
 export default LinkGenerator;

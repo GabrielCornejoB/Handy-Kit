@@ -6,6 +6,9 @@ import MenuGrid from "../components/home/MenuGrid/MenuGrid";
 
 function Home() {
   const router = useRouter();
+  const handleCardPress = (tool) => {
+    router.push("/tools/" + tool);
+  };
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.background }}>
@@ -19,7 +22,7 @@ function Home() {
             Te llevará a otra pantalla con la herramienta
           </Text>
         </View>
-        <MenuGrid />
+        <MenuGrid navigate={handleCardPress} />
       </ScrollView>
     </SafeAreaView>
   );
