@@ -1,8 +1,8 @@
 import { View, ScrollView, SafeAreaView, Text } from "react-native";
 import { useRouter } from "expo-router";
 import { COLORS, SIZES } from "../constants/theme";
-import HomeNav from "../components/home/HomeNav/HomeNav";
 import MenuGrid from "../components/home/MenuGrid/MenuGrid";
+import Navbar from "../components/common/Navbar/Navbar";
 
 function Home() {
   const router = useRouter();
@@ -12,7 +12,7 @@ function Home() {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.background }}>
-      <HomeNav />
+      <Navbar />
       <ScrollView>
         <View style={{ padding: SIZES.medium }}>
           <Text style={{ fontWeight: "bold", fontSize: SIZES.xlarge }}>
