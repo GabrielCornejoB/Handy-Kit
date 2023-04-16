@@ -1,9 +1,8 @@
 import { View, ScrollView, SafeAreaView, Text } from "react-native";
-import { Stack, useRouter } from "expo-router";
+import { useRouter } from "expo-router";
 import { COLORS, SIZES } from "../constants/theme";
-import images from "../constants/images";
 import HomeNav from "../components/home/HomeNav/HomeNav";
-import NavCard from "../components/home/NavCard/NavCard";
+import MenuGrid from "../components/home/MenuGrid/MenuGrid";
 
 function Home() {
   const router = useRouter();
@@ -12,7 +11,15 @@ function Home() {
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.background }}>
       <HomeNav />
       <ScrollView>
-        <NavCard text="Soundboard" icon={images.audio} />
+        <View style={{ padding: SIZES.medium }}>
+          <Text style={{ fontWeight: "bold", fontSize: SIZES.xlarge }}>
+            Seleccione una opción
+          </Text>
+          <Text style={{ color: COLORS.lightGray, fontWeight: 500 }}>
+            Te llevará a otra pantalla con la herramienta
+          </Text>
+        </View>
+        <MenuGrid />
       </ScrollView>
     </SafeAreaView>
   );
