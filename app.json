@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "Handy-Kit",
+    "slug": "Handy-Kit"
+  }
+}
