@@ -13,6 +13,8 @@ const SIZES = {
   medium: 16,
   large: 20,
   xlarge: 24,
+  xxlarge: 28,
+  xxxlarge: 32,
 };
 
 const BORDERS = {

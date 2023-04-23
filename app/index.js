@@ -12,7 +12,7 @@ function Home() {
   };
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.background }}>
+    <SafeAreaView style={styles.mainContainer}>
       <Navbar />
       <ScrollView>
         <View style={{ padding: SIZES.medium }}>

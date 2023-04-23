@@ -3,10 +3,10 @@ import { SIZES } from "../../../constants/theme";
 
 const styles = StyleSheet.create({
   gridContainer: {
-    flex: 2,
+    flex: 3,
     alignItems: "center",
     justifyContent: "center",
-    gap: SIZES.large,
+    gap: SIZES.medium,
     paddingBottom: SIZES.xsmall,
   },
 });

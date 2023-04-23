@@ -1,8 +1,8 @@
 import { View } from "react-native";
-import styles from "./MenuGrid.styles";
-import images from "../../../constants/images";
 import Row from "../../common/Row/Row";
 import NavCard from "../NavCard/NavCard";
+import images from "../../../constants/images";
+import styles from "./MenuGrid.styles";
 
 function MenuGrid({ navigate }) {
   return (

@@ -7,7 +7,9 @@ import {
   Alert,
   Clipboard,
 } from "react-native";
-import { CopyText, Input, Navbar } from "../../components";
+import Navbar from "../../components/common/Navbar/Navbar";
+import Input from "../../components/common/Input/Input";
+import CopyText from "../../components/common/CopyText/CopyText";
 import { COLORS, SIZES } from "../../constants/theme";
 import styles from "../../styles/main.styles";
 
@@ -43,7 +45,7 @@ function LinkGenerator() {
   };
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.mainContainer}>
       <Navbar />
       <View style={{ padding: SIZES.medium, gap: SIZES.medium }}>
         <Text style={styles.h1}>Generador links WhatsApp</Text>
