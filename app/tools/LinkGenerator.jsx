@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   View,
   Text,
@@ -6,11 +7,9 @@ import {
   Alert,
   Clipboard,
 } from "react-native";
-import { useState } from "react";
-import Navbar from "../../components/common/Navbar/Navbar";
+import { CopyText, Input, Navbar } from "../../components";
 import { COLORS, SIZES } from "../../constants/theme";
-import Input from "../../components/common/Input/Input";
-import CopyText from "../../components/common/CopyText/CopyText";
+import styles from "../../styles/main.styles";
 
 function LinkGenerator() {
   const BASE_URL = "https://api.whatsapp.com/send?phone=";
@@ -47,9 +46,7 @@ function LinkGenerator() {
     <SafeAreaView>
       <Navbar />
       <View style={{ padding: SIZES.medium, gap: SIZES.medium }}>
-        <Text style={{ fontSize: SIZES.xlarge, fontWeight: "bold" }}>
-          Generador links WhatsApp
-        </Text>
+        <Text style={styles.h1}>Generador links WhatsApp</Text>
         <Text>
           Esta herramienta te permite generar links de WhatsApp para poder
           acceder a chats sin tener que agregarlos.
