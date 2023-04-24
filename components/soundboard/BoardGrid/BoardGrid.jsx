@@ -14,6 +14,8 @@ function BoardGrid() {
       </Row>
       <Row>
         <SoundCard emoji="🏥" audio={audios.ecg} />
+        <SoundCard emoji="🐓" audio={audios.rooster} />
+        <SoundCard emoji="🐒" audio={audios.monkey} />
       </Row>
     </View>
   );
