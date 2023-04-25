@@ -25,8 +25,14 @@ function DiscountCalculator() {
   };
 
   const calculateDiscountedPrice = () => {
-    const discountedPrice = price - price * (discount / 100);
-    Alert.alert(`Discounted Price: $${discountedPrice.toFixed(2)}`);
+    const discountedPrice = (price - price * (discount / 100 )).toLocaleString('en-US', { 
+      style: 'currency', 
+      currency: 'USD' 
+    });
+    
+    
+    Alert.alert(`Precio con descuento :${discountedPrice}`);
+    console.log(discountedPrice);
 
   };
 
