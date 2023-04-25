@@ -26,7 +26,7 @@ function DiscountCalculator() {
 
   const calculateDiscountedPrice = () => {
     const discountedPrice = price - price * (discount / 100);
-    Alert.alert(`Discounted Price: $${discountedPrice.toFixed(2)}`);
+    Alert.alert(`Precio con descuento :${discountedPrice.toFixed(0)}`);
 
   };
 
