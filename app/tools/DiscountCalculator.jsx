@@ -8,6 +8,7 @@ import {
   TextInput,
 } from "react-native";
 import Navbar from "../../components/common/Navbar/Navbar";
+import Input from "../../components/common/Input/Input";
 import { COLORS, SIZES } from "../../constants/theme";
 import styles from "../../styles/main.styles";
 
@@ -26,6 +27,7 @@ function DiscountCalculator() {
   const calculateDiscountedPrice = () => {
     const discountedPrice = price - price * (discount / 100);
     Alert.alert(`Discounted Price: $${discountedPrice.toFixed(2)}`);
+
   };
 
   return (
@@ -37,21 +39,21 @@ function DiscountCalculator() {
           Esta herramienta te permite calcular descuentos!
         </Text>
 
-        <TextInput
-          handlechang={handleChangePrice}
+        <Input
+          handleChange={handleChangePrice}
           placeholder="Ingrese aquí el precio"
           value={price}
           keyboardType="numeric"
         />
 
-        <TextInput
-          onChangeText={handleChangeDiscount}
-          placeholder="Ingrese aqui el descuento"
+        <Input
+          handleChange={handleChangeDiscount}
+          placeholder="Ingrese aqui el descuento (%)"
           value={discount}
           keyboardType="numeric"
         />
 
-        <Button title="Calculate" onPress={calculateDiscountedPrice} />
+        <Button title="Calculate" onPress={calculateDiscountedPrice} color={COLORS.red}/>
       </View>
     </SafeAreaView>
   );
