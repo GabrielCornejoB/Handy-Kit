@@ -59,7 +59,7 @@ function DiscountCalculator() {
           keyboardType="numeric"
         />
 
-        <Button title="Calculate" onPress={calculateDiscountedPrice} color={COLORS.red}/>
+        <Button title="Calcular precio" onPress={calculateDiscountedPrice} color={COLORS.red}/>
       </View>
     </SafeAreaView>
   );
