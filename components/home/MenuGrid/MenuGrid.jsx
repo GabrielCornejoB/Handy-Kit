@@ -39,7 +39,7 @@ function MenuGrid({ navigate }) {
         />
         <NavCard
           text="Pendientes"
-          icon={images.dumbbell}
+          icon={images.list}
           handleCardPress={() => navigate("TodoList")}
         />
       </Row>
