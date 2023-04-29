@@ -38,9 +38,9 @@ function MenuGrid({ navigate }) {
           handleCardPress={() => navigate("Soundboard")}
         />
         <NavCard
-          text="Rutinas gimnasio"
+          text="Pendientes"
           icon={images.dumbbell}
-          handleCardPress={() => navigate("GymRoutines")}
+          handleCardPress={() => navigate("TodoList")}
         />
       </Row>
     </View>
