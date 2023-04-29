@@ -10,9 +10,21 @@ const styles = StyleSheet.create({
     fontSize: SIZES.xlarge,
     fontWeight: "bold",
   },
+  h2: {
+    fontSize: SIZES.large,
+    fontWeight: "bold",
+  },
   subtitle: {
     color: COLORS.lightGray,
     fontWeight: 500,
+  },
+  borderBottom: {
+    borderBottomColor: COLORS.lightGray,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    paddingBottom: SIZES.medium,
+  },
+  marginBottom: {
+    marginBottom: SIZES.medium,
   },
 });
 
