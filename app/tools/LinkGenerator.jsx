@@ -57,6 +57,7 @@ function LinkGenerator() {
           placeholder="Ingrese aquí el número"
           value={cellphone}
           handleChange={handleInputChange}
+          keyboardType="numeric"
         />
         <Button
           color={COLORS.red}
