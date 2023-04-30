@@ -5,6 +5,14 @@
       "bundler": "metro"
     },
     "name": "Handy-Kit",
-    "slug": "Handy-Kit"
+    "slug": "Handy-Kit",
+    "extra": {
+      "eas": {
+        "projectId": "f72973ef-63e1-4b7b-a4d9-62778ecd3637"
+      }
+    },
+    "android": {
+      "package": "com.murita.HandyKit"
+    }
   }
 }
