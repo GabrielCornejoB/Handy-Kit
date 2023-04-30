@@ -14,7 +14,7 @@ function MenuGrid({ navigate }) {
           handleCardPress={() => navigate("DiscountCalculator")}
         />
         <NavCard
-          text="Calculadora de       regla de 3"
+          text="Calculadora de regla de tres"
           icon={images.divide}
           handleCardPress={() => navigate("RuleCalculator")}
         />
@@ -38,9 +38,9 @@ function MenuGrid({ navigate }) {
           handleCardPress={() => navigate("Soundboard")}
         />
         <NavCard
-          text="Rutinas gimnasio"
-          icon={images.dumbbell}
-          handleCardPress={() => navigate("GymRoutines")}
+          text="Pendientes"
+          icon={images.list}
+          handleCardPress={() => navigate("TodoList")}
         />
       </Row>
     </View>
