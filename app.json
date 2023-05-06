@@ -12,7 +12,8 @@
       }
     },
     "android": {
-      "package": "com.murita.HandyKit"
+      "package": "com.murita.HandyKit",
+      "versionCode": 3
     }
   }
 }
