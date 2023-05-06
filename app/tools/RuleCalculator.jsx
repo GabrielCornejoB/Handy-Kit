@@ -48,9 +48,9 @@ function RuleCalculator() {
       <Navbar />
       <View style={{ padding: SIZES.medium, gap: SIZES.medium }}>
         <Text style={styles.h1}>Calculadora de regla de 3!</Text>
-        <Text>Ingresa los valores, ten en cuenta cuenta que: X=b.c/a</Text>
+        <Text>Ingresa los valores, ten en cuenta cuenta que: ?=b X c/a, donde b/a = ?/c</Text>
         <View style={{ flexDirection: "row", alignItems: "center", marginTop: SIZES.medium }}>
-          <Text style={{ fontSize: SIZES.h3 }}>x =</Text>
+          <Text style={{ fontSize: SIZES.h3 }}>? =</Text>
           <Input
             label="b"
             keyboardType="numeric"
@@ -58,7 +58,7 @@ function RuleCalculator() {
             handleChange={handleSecondValueChange}
             containerStyle={{ marginHorizontal: SIZES.small }}
           />
-          <Text style={{ fontSize: SIZES.h3 }}>.</Text>
+          <Text style={{ fontSize: SIZES.h3 }}>X</Text>
           <Input
             label="c"
             keyboardType="numeric"
